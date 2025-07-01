@@ -1,0 +1,81 @@
+.sec-1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.sec-1 .container .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+.sec-1 .left .cssOnlyText {
+  font-size: 120px;
+  font-weight: 800;
+}
+
+.sec-1 .right .helloText {
+  font-size: 45px;
+}
+.sec-1 .right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.sec-1 .right .text {
+  font-size: 13px;
+  text-align: end;
+}
+
+.sec-1 .bottom {
+  margin-top: 50px;
+  width: 100%;
+  height: 520px;
+  background-image: url("../../../public/images/banner.png");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.sec-1 .bottom .alexanderImage {
+  margin-top: -180px;
+}
+
+@media (width < 1200px) {
+  .sec-1 .left .cssOnlyText {
+    font-size: 90px;
+    font-weight: 600;
+  }
+}
+@media (width < 1000px) {
+  .sec-1 .left .cssOnlyText {
+    font-size: 70px;
+    font-weight: 600;
+  }
+}
+@media (width < 850px) {
+  .sec-1 .container .top {
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: top;
+    margin-bottom: 200px;
+  }
+}
+@media (width < 600px) {
+  .sec-1 .container {
+    padding: 0 20px;
+  }
+  .sec-1 .bottom .alexanderImage {
+    width: 300px;
+    height: 400px;
+  }
+  .sec-1 .bottom {
+    height: 300px;
+  }
+  .sec-1 .left img {
+    width: 100%;
+  }
+  .sec-1 .left .cssOnlyText {
+    font-size: 50px;
+  }
+}
