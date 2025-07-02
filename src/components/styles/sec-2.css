@@ -1,0 +1,27 @@
+
+.sec-2 .container .animateTitle {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.sec-2 .animateTitle .front-image {
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    
+    animation: rotateTitle 1s infinite linear;
+}
+
+
+@keyframes rotateTitle {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        
+
+    }
+}
