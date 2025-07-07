@@ -15,7 +15,6 @@ export default function Sec3() {
   const [showBlur3, setShowBlur3] = useState(false);
   const [showBlur4, setShowBlur4] = useState(false);
 
-  // ✅ Hook مستقلة للتمويه
   const useScrollBlur = (
     ref: any,
     set: React.Dispatch<React.SetStateAction<boolean>>
@@ -36,14 +35,13 @@ export default function Sec3() {
       };
 
       window.addEventListener('scroll', handleScroll);
-      handleScroll(); // Call once on mount
+      handleScroll(); 
 
       return () => window.removeEventListener('scroll', handleScroll);
     }, [ref, set]);
   };
 
-  // 🔁 تفعيل الـ hook على كل عنصر
-  useScrollBlur(ref1, setShowBlur2);
+  useScrollBlur(ref1, setShowBlur1);
   useScrollBlur(ref2, setShowBlur2);
   useScrollBlur(ref3, setShowBlur3);
   useScrollBlur(ref4, setShowBlur4);
