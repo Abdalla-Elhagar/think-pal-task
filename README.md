@@ -1,1 +1,3 @@
-DEMO: think-pal-task.vercel.app
+
+
+Demo: https://think-pal-task.vercel.app/
